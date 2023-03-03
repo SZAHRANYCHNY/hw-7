@@ -24,18 +24,7 @@
           <a href="./index.html" class="link top-logo"
             >WEB<span class="top-part-logo list">STUDIO</span>
           </a>
-          <button
-            class="button-burger"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <img
-              class="menu-burger js-open-menu"
-              src="/images/icons/menu-burger.svg"
-              alt="menu-burger"
-            />
-          </button>
+
           <ul class="list menu-row">
             <li class="menu">
               <a class="link menu-link menu-link-style" href="./index.html"
@@ -62,6 +51,18 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-burger js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <img
+            class="burger-icon"
+            src="./images/icons/sprite/burger/burger.svg"
+            alt="burger button"
+          />
+        </button>
       </div>
     </header>
     <main>
@@ -145,24 +146,30 @@
             <ul class="list images-row">
               <li class="">
                 <img
-                  src="./images/img4.jpg"
+                  srcset="./images/img4@1x.jpg 1x, ./images/img4@1x.jpg 2x"
+                  src="./images/img4@1x.jpg"
                   alt="gadget with design"
+                  loading="lazy"
                   width="360"
                   height="300"
                 />
               </li>
               <li class="">
                 <img
-                  src="./images/img5.jpg"
+                  srcset="./images/img5@1x.jpg 1x, ./images/img5@1x.jpg 2x"
+                  src="./images/img5@1x.jpg"
                   alt="gadget with design"
+                  loading="lazy"
                   width="360"
                   height="300"
                 />
               </li>
               <li>
                 <img
-                  src="./images/img6.jpg"
+                  srcset="./images/img6@1x.jpg 1x, ./images/img6@1x.jpg 2x"
+                  src="./images/img6@1x.jpg"
                   alt="gadget with design"
+                  loading="lazy"
                   width="360"
                   height="300"
                 />
@@ -171,14 +178,19 @@
           </div>
         </div>
       </section>
-      <section class="team section">
+      <section class="team section team-section">
         <div class="container team-bottom">
           <h2 class="secondary-title">Our Team</h2>
           <ul class="list images-row">
             <li class="">
               <img
-                src="./images/team/img.jpg"
+                srcset="
+                  ./images/team/img@1x.jpg 1x,
+                  ./images/team/img@1x.jpg 2x
+                "
+                src="./images/team/img@1x.jpg"
                 alt="worker Mark Guerrero , Product Designer "
+                loading="lazy"
                 width="264"
                 height="260"
               />
@@ -247,8 +259,13 @@
             </li>
             <li class="">
               <img
-                src="./images/team/img1.jpg"
+                srcset="
+                  ./images/team/img1@1x.jpg 1x,
+                  ./images/team/img1@1x.jpg 2x
+                "
+                src="./images/team/img1@1x.jpg"
                 alt="worker Tom Ford,Frontend Developer "
+                loading="lazy"
                 width="264"
                 height="260"
               />
@@ -317,9 +334,14 @@
             </li>
             <li class="">
               <img
+                srcset="
+                  ./images/team/img2@1x.jpg 1x,
+                  ./images/team/img2@2x.jpg 2x
+                "
                 class="img"
-                src="./images/team/img2.jpg"
+                src="./images/team/img2@1x.jpg"
                 alt="worker Camila Garcia,Marketing"
+                loading="lazy"
                 width="264"
                 height="260"
               />
@@ -388,8 +410,13 @@
             </li>
             <li>
               <img
-                src="./images/team/img3.jpg"
+                srcset="
+                  ./images/team/img3@1x.jpg 1x,
+                  ./images/team/img3@2x.jpg 2x
+                "
+                src="./images/team/img3@1x.jpg"
                 alt="worker Daniel Wilson,Designer "
+                loading="lazy"
                 width="264"
                 height="260"
               />
@@ -697,6 +724,110 @@
         </form>
       </div>
     </div>
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="12"
+          height="12"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="list mobile-menu">
+        <li class="">
+          <a class="link mobile-link-style" href="./index.html">Studio</a>
+        </li>
+        <li class="">
+          <a class="link mobile-link-style" href="./portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li class="">
+          <a class="link mobile-link-style" href="">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-tel">
+          <a href="tel" class="mobile-tel link">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mobile-email list">
+          <a href="mail" class="mobile-mail link">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-social list">
+        <li class="menu-social-svg">
+          <a
+            class="mobile-social-link"
+            href="https://instagram.com"
+            rel="noopener noreferrer"
+            aria-label="instagram link"
+          >
+            <svg class="mobile-social-svg" width="24" height="24">
+              <use
+                href="./images/icons/sprite/symbol-defs.svg#icon-instagram-2"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-svg">
+          <a
+            class="mobile-social-link"
+            href="https://twitter.com"
+            rel="noopener noreferrer"
+            aria-label="twitter link"
+          >
+            <svg class="mobile-social-svg" width="24" height="24">
+              <use
+                href="./images/icons/sprite/symbol-defs.svg#icon-Group"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-svg">
+          <a
+            class="mobile-social-link"
+            href="https://facebook.com"
+            rel="noopener noreferrer"
+            aria-label="facebook link"
+          >
+            <svg class="mobile-social-svg" width="24" height="24">
+              <use
+                href="./images/icons/sprite/symbol-defs.svg#icon-facebook-1"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-svg">
+          <a
+            class="mobile-social-link"
+            href="https://linkedin.com/"
+            rel="noopener noreferrer"
+            aria-label="linkedin link"
+          >
+            <svg class="mobile-social-svg" width="24" height="24">
+              <use
+                href="./images/icons/sprite/symbol-defs.svg#icon-linkedin-1"
+              ></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/input-mask.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
