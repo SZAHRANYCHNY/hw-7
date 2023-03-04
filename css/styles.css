@@ -521,6 +521,9 @@ button {
   .title {
     padding-top: 0;
   }
+  .section-gadgets {
+    padding-bottom: 120px;
+  }
 }
 /*  TEAM */
 /* team mobile */
@@ -611,7 +614,6 @@ button {
 /* team desktop */
 @media screen and (min-width: 1200px) {
   .secondary-title {
-    padding-top: 120px;
     padding-bottom: 72px;
     margin-bottom: 0;
   }
@@ -631,7 +633,7 @@ CUSTOMERS */
   font-size: 36px;
   line-height: calc(40 / 36);
   padding-bottom: 72px;
-  padding-top: 96px;
+
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark-cl);
