@@ -1285,8 +1285,8 @@ CUSTOMERS */
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 48px;
-  right: 48px;
+  top: 24px;
+  right: 24px;
   color: var(--dark-cl);
 }
 .menu-container .menu-toggle:hover,
