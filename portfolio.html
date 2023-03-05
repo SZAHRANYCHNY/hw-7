@@ -25,14 +25,15 @@
           <a href="./index.html" class="link top-logo"
             >WEB<span class="top-part-logo list">STUDIO</span>
           </a>
+
           <ul class="list menu-row">
             <li class="menu">
-              <a class="link menu-link" href="./index.html">Studio</a>
+              <a class="link menu-link menu-link-style" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="menu">
-              <a class="link menu-link menu-link-style" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="link menu-link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="menu">
               <a class="link menu-link" href="">Contacts</a>
@@ -51,6 +52,18 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-burger js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <img
+            class="burger-icon"
+            src="./images/icons/sprite/burger/burger.svg"
+            alt="burger button"
+          />
+        </button>
       </div>
     </header>
 
@@ -298,7 +311,7 @@
       </section>
     </main>
     <footer class="dark footer-container">
-      <div class="container footer-flex">
+      <div class="footer-media container footer-flex tablet-footer">
         <div class="footer-part-flex">
           <a href="./index.html" class="footer-part-logo link"
             >WEB<span class="white-part-logo">STUDIO</span></a
@@ -372,8 +385,8 @@
 
         <div class="footer-wrapper">
           <p class="footer-text-form">Subscribe</p>
-          <form class="footer-form">
-            <label>
+          <form class="footer-form mail-form">
+            <label class="mail-row">
               <input
                 class="footer-form-field form-comments"
                 type="email"
